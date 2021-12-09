@@ -59,7 +59,7 @@ itertive method to implemnts BFS.
 In the first node I change visit statue to True and Add this node to new QUEUE.
 and than if the Queue is not empty I remove the the last elemnt and go over is NeighborsNode if I not visit some of their nighber I change is visit statur to true and add to QUEUE.
 
-isStronglyConnected - here I use in bfs algo and I checked there is a valid path from each node to each other node.
+isStronglyConnected -Used the  bfs algo to validate  there is a  path to each node.
 
 this function help me to implements the orignal method of DirectedWeightedGraphAlgorithms:
 
@@ -86,9 +86,9 @@ in addician I add to  tcp prev cities in the first place/
 To the end I go over cities size and go in the shortest Path from prev to curr vertex, I update all the vertex I pass as visited and not go over them again.
 
 
-### Tast:
-To test the algo check in junit the constrctor of every class, and use G1-G3 to check is save&load work well.
-In addition create graph and check if the center, shoretestpath,shoretestpathdist function provided the expeted result.
+### Test:
+In order to test the solution,I created multipe unit test. each unit test,generate a graph, and test the relevant function.
+I aslo used the given file - G1,G2,G3 to test my code, and load/lave methogs.
 
 ### Performance analysis on graph with 1000,10000,100000 vertex'es:
  graph|timeOfGetCenter
